@@ -2,7 +2,7 @@
 
 A Sudoku generator, solver, analyzer, and trainer written in Java/Swing.
 
-This is a fork of [Hodoku2](https://github.com/wyzelli/Hodoku2) by [wyzelli](https://github.com/wyzelli), which is a fork of [Hodoku](https://github.com/PseudoFish/Hodoku) by [PseudoFish](https://github.com/PseudoFish), which is a fork of [hodoku](https://github.com/yoki123/hodoku) by [yoki123](https://github.com/yoki123), which is a clone of [HoDoKu](https://hodoku.sourceforge.net/en/index.php) originally created by Bernhard Hobiger (hobiwan), who has since passed away.
+This is a fork of [Hodoku2](https://github.com/wyzelli/Hodoku2) by [wyzelli](https://github.com/wyzelli), which is a fork of [Hodoku](https://github.com/PseudoFish/Hodoku) by [PseudoFish](https://github.com/PseudoFish), which is a fork of [hodoku](https://github.com/yoki123/hodoku) by [yoki123](https://github.com/yoki123), which is a clone of [HoDoKu](https://hodoku.sourceforge.net/en/index.php) originally created by [Bernhard Hobiger (hobiwan)](https://sourceforge.net/u/hobiwan/profile/), who has since passed away.
 
 ## Features
 
