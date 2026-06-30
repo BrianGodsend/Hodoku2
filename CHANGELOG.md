@@ -4,6 +4,14 @@ All notable changes to HoDoKu are documented here.
 
 ---
 
+## [2.3.5] – 2026-06-30
+
+### Changed
+
+- Aligned README build table; tightened markdownlint config
+
+---
+
 ## [2.3.4] – 2026-06-30
 
 ### Changed

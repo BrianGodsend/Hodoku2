@@ -21,7 +21,7 @@ This is a fork of [Hodoku2](https://github.com/wyzelli/Hodoku2) by [wyzelli](htt
 **All platforms** — run the JAR directly:
 
 ```bash
-java -Xmx256m -jar HoDoKu-2.3.4.jar
+java -Xmx256m -jar HoDoKu-2.3.5.jar
 ```
 
 ## Building
@@ -37,11 +37,11 @@ mvn package
 
 Outputs:
 
-| File                              | Description                                                |
-|-----------------------------------|------------------------------------------------------------|
-| `target/HoDoKu-2.3.4.jar`        | Runnable JAR — `java -jar` on any platform                 |
-| `target/HoDoKu.exe`              | Windows launcher (Launch4J wrapper; requires Java on PATH) |
-| `target/installer/HoDoKu-2.3.4.exe` | Windows installer — bundles JRE, no Java required       |
+| File                                | Description                                        |
+|-------------------------------------|----------------------------------------------------|
+| `target/HoDoKu-2.3.5.jar`           | Runnable JAR — `java -jar` on any platform         |
+| `target/HoDoKu.exe`                 | Windows launcher (Launch4J wrapper; requires Java) |
+| `target/installer/HoDoKu-2.3.5.exe` | Windows installer — bundles JRE, no Java required  |
 
 ## Project structure
 
