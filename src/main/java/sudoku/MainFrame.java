@@ -57,6 +57,7 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.PrintWriter;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
@@ -67,6 +68,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Properties;
 import java.util.ResourceBundle;
 import java.util.Set;
 import java.util.logging.Level;
@@ -104,17 +106,14 @@ import solver.SudokuSolverFactory;
 public class MainFrame extends javax.swing.JFrame implements FlavorListener {
 
 	private static final long serialVersionUID = 1L;
-	public static final String VERSION = "Hodoku - v2.3.2";
+	public static final String VERSION;
 
-	// public static final String BUILD = "Build 16";
 	public static final String BUILD;
 	public static final String REV = "$LastChangedRevision: 116 $";
 
 	/** The size of the toggle button icons */
 	private static final int TOGGLE_BUTTON_ICON_SIZE = 32;
 	private SudokuPanel sudokuPanel;
-	// private DifficultyLevel level =
-	// Options.getInstance().getDifficultyLevels()[DifficultyType.EASY.ordinal()];
 	private JToggleButton[] toggleButtons = new JToggleButton[10];
 	/** Icons for the filter toggle buttons in the toolbar (original version) */
 	private Icon[] toggleButtonIconsOrg = new Icon[10];
@@ -362,6 +361,16 @@ public class MainFrame extends javax.swing.JFrame implements FlavorListener {
 	static {
 		String[] dummy = REV.split(" ");
 		BUILD = "Build " + dummy[1];
+
+		Properties props = new Properties();
+		try (InputStream in = MainFrame.class.getResourceAsStream("/app.properties")) {
+			if (in != null) {
+				props.load(in);
+			}
+		} catch (IOException e) {
+			Logger.getLogger(MainFrame.class.getName()).log(Level.WARNING, "Could not load app.properties", e);
+		}
+		VERSION = props.getProperty("app.name", "Hodoku2") + " - v" + props.getProperty("app.version", "unknown");
 	}
 
 	/**
